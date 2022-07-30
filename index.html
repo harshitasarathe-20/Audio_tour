@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tourism</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Tour<span> & Explore</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "explore.html" class = "nav-link">Explore</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1 class="heading">Madhya Pradesh Tourism</h1>
+                    <p>The Heart of Incredible !ndia
+                    </p>
+                </div>
+                <!-- <div class = "header-form">
+                    <h2>Choose your Travel location:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Destination name">
+                        <input type="date" class = "form-control" placeholder="Date">
+                        <input type="number" class = "form-control" placeholder="Price ($)">
+                        <input type="submit" class = "btn" value = "Search">
+                    </form>
+                </div> -->
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "img/Sanchi-Stupa.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Sanchi
+                            </span>
+                            <div>
+                                <p class = "text">Buddhist monuments of Sanchi are one of the oldest stone structures in India. Designated as a World Heritage site by UNESCO.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "img/Mandu.jpg" alt = "featured place" href="html/Sanchi.html">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Mandu
+                            </span>
+                            <div>
+                                <p class = "text">Mandu, a city located in the Malwa region of Madhya Pradesh, is the epitome of architectural excellence. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "img/Orchha.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Orchha
+                            </span>
+                            <div>
+                                <p class = "text">Orchha is a historical town located on the banks of river Betwa in Madhya Pradesh, known for its grand palaces, and intricately carved temples.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "img/k.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Khajurao
+                            </span>
+                            <div>
+                                <p class = "text">Khajuraho, a UNESCO World Heritage Site located in Madhya Pradesh, is known around the world for its stunning temples adorned by erotic and sensuous carvings. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        
+                        <img src = "img/Bhedaghat1.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Bhedaghat
+                            </span>
+                            <div>
+                                <p class = "text">Bhedaghat is known for the Dhuandar Falls (Dhuan means smoke and Dhar means flow), a huge cascade of water that falls from a height of 98 feet.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "img/deer.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Kanha National
+                            </span>
+                            <div>
+                                <p class = "text">Located on the banks of the River Narmada, this gorgeous town is largely referred to as the temple town of Madhya Pradesh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+            <!-- festival section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <h2 class = "lg-title">Fairs And Festivals</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item" >
+                        <img src = "img/akhil.jpg" >
+                        <h3>Akhil Bhartiya Kalidas Samaroh</h3>
+                        <p class = "text">Writers, Poets from around the world come together in the march for seven brilliant days of poetry recitation, story reading, and cultural performances. Ujjain is the hometown of many eminent writers and poets like Kalidas, Pandit Surya Narayan Vyas, Balkavi Bairagi, to name a few. The fest is organized to celebrate the work of the notable poet, Kalidas.<br></p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "test-item">
+                        <img src = "img/Khajuraho-Dance-Festival-pics-2.jpg" alt = "testimonial">
+                        <h3>Khajurao Dance Festival</h3>
+                        <p class = "text">The Khajuraho Dance Festival began in Khajuraho, Madhya Pradesh which is based on the Indian classical dance tradition. Khajuraho Temples come alive with splendour, beams, and the hustle-bustle of art lovers at the Festival.The festival is being organized by the Culture Department through Ustad Alauddin Khan Music and Arts Academy Bhopal.<br> </p>
+                        <a href = "#" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "test-item">
+                        <img src = "img/lokrang-bhopal.jpg" alt = "testimonial">
+                        <h3> Lokrang Festival</h3>
+                        <p class = "text">Lokrang is a cultural festival in which all the dancers put their best foot forwards and matches their steps with the folk music. During the festival, the stage displays the various forms of folk dances, music, and ethnic dances. Also, one can see the beautiful collections of fans and handicrafts made by the tribal community of Madhya Pradesh.<br> </p>
+                        <a href = "#" class="btn" >Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/XRecorder_21072022_205859 (1).mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+                
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Tour &<span><br>Explore</span>
+                    </a>
+                    <p class = "text">The goal and vision of Audio Tour guide helps the user to enjoy their tour of all archeological sites and museum easily,quickly and safely, through their smart device.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Quick links</h2>
+                    <ul>
+                        <li><a href = "#">Culture</a></li>
+                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "#">Handicrafts</a></li>
+                        <li><a href = "#">Festival & Events</a></li>
+                        <li><a href = "#">Adventure</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
