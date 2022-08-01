@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Panna</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+
+        <style>
+            header{
+                min-height: 100vh;
+                padding-top: 7rem;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/panna-jpg) center/cover no-repeat;
+                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/panna-jpg) center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/panna-jpg) center/cover no-repeat;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                color: #fff;
+                text-align: center;
+            }
+            .nav-link {
+                color: white;;
+            }
+
+            .site-brand {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar" >
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Tour &<span><br>Explore</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "../index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "../gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <!-- <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li> -->
+                        <li class = "nav-item">
+                            <a href = "../explore.html" class = "nav-link">Explore</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "../contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+         <!-- header -->
+         <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Dazzling Panna </h1>
+                    
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+
+        <!-- about section -->
+        <section id = "about" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Listen Audio</span>
+                    
+                    <span><div class="video-btn">
+                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
+                        </div></span>
+                </div>
+
+                <div class = "about-row">
+                    <div class = "about-left my-2">
+                        <img src = "img/panna-3.jpg" alt = "about img">
+                    </div>
+                    <div class = "about-right">
+                        <p class = "text">Panna National Park located in Panna and Chattarpur district of Madhya Pradesh is formally being renowned as the 22nd tiger reserve of India and fifth in Madhya Pradesh. By covering an area of 542.67 sq km, Panna Reserve lies besides the areas of the Ken River at the central state of India, Madhya Pradesh at a distance of 57 km from Khajuraho, a world heritage center. Panna Tiger Reserve was being found as the best managed and maintained national parks of India by the Ministry of Tourism of India and this reputation brought the park the Award of Excellence in the year 2007. Thanks to all the efforts of Mr. R. Shreenivasa Murthy, a forest officer of the area who brought his best efforts to bring the Panna Park as the best managed and developed park in the area, in collaboration with his team.</p>    
+                        <p class = "text">
+                            In the tropical region of Panna the climate of the reserve area is sometimes so pleasant, sometime so scorching during summers but with heavy rainfalls the area is again plush with greenery to make the ambience more appealing.</p>
+                       
+                    </div>
+                </div>
+
+                <div class = "about-row">
+                    
+                    <div class = "about-right my-2">
+                        
+                        <article>
+                            <h2>Wildlife In Panna</h2>
+                           
+                            <p class = "text"> <b>Mammals</b> <br>Panna is the most outstanding, well-managed habitat for all those miscellaneous wildlife creatures of India. The national park is an ideal home to variety of flora and fauna including vultures, cheetals, chinkaras, sambhar and sloth bears. Panna is also an ideal home to the king of the jungles- the royal tigers (Panthera tigris) along with his fellow beings leopard (Panthera pardus), wild dog (Cuon alpinus), wolf (Canis lupus), hyaena (Hyaena hyaena), caracal (Felus caracal) and other smaller cats.                               The wooded areas are dotted with sambar, the largest of Indian deers, chital and chowsingha. One can easily see nilgai and chinkara in most open areas in the grasslands, especially on the periphery.</p>
+                            <p class = "text" ><b>Avifauna </b><br>The number of bird species found in Panna is 200 that include the migratory counts. One can find the species like white necked stork, bareheaded goose, honey Buuzzard, King vulture, Blossom headed Parakeet, Paradise flycatcher, Slaty headed Scimitar babbler for the most chirping and wildering effects in Panna.</p>
+                            <p class = "text"><b> Reptiles <br></b>Panna also boasts variety of snakes, including the python and other reptiles in the vicinity.</p>
+                        </article>
+                    </div>
+                <div class = "about-left ">
+                        <img src = "img/panna-2.jpg" alt = "about img">
+                       
+                    </div>
+                </div>
+
+
+                <div class = "about-row">
+                    <div class = "about-left my-2">
+                        <img src = "img/panna-1.jpg" alt = "about img">
+                    </div>
+                    
+                    <div class = "about-right">
+                        <h2>Flora in Panna Tiger Reserve</h2>
+                        <p class = "text"> The areas of Panna Tiger Reserve have dry and hot climate. Such climate brings the dry Teak and dry mixed forest by coupling with shallow Vindhyan soils. The dominating vegetation type is miscellaneous dry deciduous forest inter spread with grassland areas. Other major forest types are open grasslands, open woodlands and riverines with tall grasses and thorny woodlands. The characteristic floral species discovered in this area are Tectona grandis, Diospyros melanoxylon, Madhuca indica, Buchnania latifolia, Anogeissus latifolia, Anogeissus pendula, Lannea coromandelica, Bosswelia serrata etc.</p>    
+                        <p class = "text"><b>Raneh Falls </b><br>One of the prominent waterfalls in the Panna Reserve area that emerges from the confluence of Ken and Khuddar rivers. This waterfall is being named after King Rane Pratap who was the erstwhile ruler of the region. Raneh Falls forms the 30 m deep and 5 km long canyon to get down into the regions of the Ken Gharial Sanctuary. The surroundings of the falls are adorned with crystalline granite, which is present in varying shades ranging from pink, red and grey. Apart from the large and small falls that are formed at the confluence, some seasonal falls also appear during monsoon season which is really worth-watching.
+                        
+                      </div>
+                </div>
+
+                <div class = "about-row">
+                    
+                    <div class = "about-right my-2">
+                        
+                        <article>
+                            <p class = "text"><b>Ken Gharial Sanctuary<br> </b>One of the prominent sanctuaries in Panna outskirts to be established with an objective to conserve the endangered species of Indian Gharials. Ken Gharial Sanctuary is being placed at the assemblage of Khuddar and Ken rivers in Panna, Chattrapur district. The sanctuary is stretched across an area of 13.5 sq km and was established in the year 1985. Open for the tourists from sunrise to sunset, the sanctuary serves as a natural habitat to various other species of reptiles including 6 m long fish-eating gharial. Surrounded by dense forests, the sanctuary is also being flourished with 45 km of river stretch with sand banks and offers shelter to wild boar, chinkara, blue bull, peacock and chitals.</p>
+                            <p class="text">Being home to numerous wildlife species, the place is named after a 6-meter long fish-eating Gharial which is a rare species of crocodile. In fact, the sanctuary was founded in the year 1985 with the aim to conserve these endangered Indian Gharials. On visiting the Ken Gharial Sanctuary, tourists will witness how the beautiful sanctuary offers shelter to Sambar Deer, Blue Bull also known as Nilgai, Peafowl, Chinkara, Wild Boar, Spotted Deer and more. Ken GHarial Sanctuary also proffers a variety of floral species including Boswellia Serrata, Pterocarpus Marsupium, Teak, Lagerstroemia parviflora, Sal, Saja, Haldina Cordifolia, Aonla, Amaltas and a lot more. Other than this, tourists visiting the sanctuary should not miss out on the Raneh Falls which is yet another popular tourist attraction lying in Ken Gharial Reserve area. The place offers a good opportunity to the tourists in witnessing innumerable gharials sun basking which is no less than an add-on advantage when visiting the Ken Gharial Sanctuary.</p>
+                        </article>
+                    </div>
+                <div class = "about-left ">
+                        <img src = "img/panna-4.jpg" alt = "about img">
+                       
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end of about section -->
+
+
+
+       
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Tour &<span><br>Explore</span>
+                    </a>
+                    <p class = "text">The goal and vision of Audio Tour guide helps the user to enjoy their tour of all archeological sites and museum easily,quickly and safely, through their smart device.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Quick links</h2>
+                    <ul>
+                        <li><a href = "#">Culture</a></li>
+                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "#">Handicrafts</a></li>
+                        <li><a href = "#">Festival & Events</a></li>
+                        <li><a href = "#">Adventure</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script src = "js/audio.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
