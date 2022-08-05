@@ -1,65 +1,38 @@
-// onload = function() {
-//     if ('speechSynthesis' in window) with(speechSynthesis) {
-  
-//       var playEle = document.querySelector('#play');
-//       var pauseEle = document.querySelector('#pause');
-//       var stopEle = document.querySelector('#stop');
-//       var flag = false;
-  
-//       playEle.addEventListener('click', onClickPlay);
-//       pauseEle.addEventListener('click', onClickPause);
-//       stopEle.addEventListener('click', onClickStop);
-  
-//       function onClickPlay() {
-//         if (!flag) {
-//           flag = true;
-//           utterance = new SpeechSynthesisUtterance(document.querySelector('article').textContent);
-//           utterance.voice = getVoices()[0];
-//           utterance.onend = function() {
-//             flag = false;
-//             playEle.className = pauseEle.className = '';
-//             stopEle.className = 'stopped';
-//           };
-//           playEle.className = 'played';
-//           stopEle.className = '';
-//           speak(utterance);
-//         }
-//         if (paused) { /* unpause/resume narration */
-//           playEle.className = 'played';
-//           pauseEle.className = '';
-//           resume();
-//         }
-//       }
-  
-//       function onClickPause() {
-//         if (speaking && !paused) { /* pause narration */
-//           pauseEle.className = 'paused';
-//           playEle.className = '';
-//           pause();
-//         }
-//       }
-  
-//       function onClickStop() {
-//         if (speaking) { /* stop narration */
-//           /* for safari */
-//           stopEle.className = 'stopped';
-//           playEle.className = pauseEle.className = '';
-//           flag = false;
-//           cancel();
-  
-//         }
-//       }
-  
-//     }
-  
-//     else { /* speech synthesis not supported */
-//       msg = document.createElement('h5');
-//       msg.textContent = "Detected no support for Speech Synthesis";
-//       msg.style.textAlign = 'center';
-//       msg.style.backgroundColor = 'red';
-//       msg.style.color = 'white';
-//       msg.style.marginTop = msg.style.marginBottom = 0;
-//       document.body.insertBefore(msg, document.querySelector('div'));
-//     }
-  
-// }
+let navbarDiv = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+        navbarDiv.classList.add('navbar-cng');
+    } else {
+        navbarDiv.classList.remove('navbar-cng');
+    }
+});
+
+
+const navbarCollapseDiv = document.getElementById('navbar-collapse');
+const navbarShowBtn = document.getElementById('navbar-show-btn');
+const navbarCloseBtn = document.getElementById('navbar-close-btn');
+// show navbar
+navbarShowBtn.addEventListener('click', () => {
+    navbarCollapseDiv.classList.add('navbar-collapse-rmw');
+});
+
+// hide side bar
+navbarCloseBtn.addEventListener('click', () => {
+    navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
+});
+
+document.addEventListener('click', (e) => {
+    if(e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn"){
+        navbarCollapseDiv.classList.remove('navbar-collapse-rmw');
+    }
+});
+
+// stop transition and animatino during window resizing
+let resizeTimer;
+window.addEventListener('resize', () => {
+    document.body.classList.add("resize-animation-stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+    }, 400);
+});

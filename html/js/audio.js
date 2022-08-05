@@ -72,6 +72,7 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
         function onClickPlay() {
             if(!flag){
                 flag = true;
+                console.log("aaaaaaaaaaa");
                 utterance = new SpeechSynthesisUtterance(document.querySelector('#texttospeech').textContent);
                 //utterance.voice = synth.getVoices()[0];
                 
