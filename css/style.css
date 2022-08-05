@@ -43,7 +43,7 @@
 
 /* navbar side menu */
 #navbar-collapse{
-    background-color: var(--green);
+    background-color: black;
     position: fixed;
     top: 0;
     right: 0;
