@@ -42,7 +42,7 @@
     </head>
     <body>
         <!-- navbar  -->
-        <nav class = "navbar" >
+        <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
                     Tour &<span><br>Explore</span>
@@ -62,9 +62,6 @@
                         <li class = "nav-item">
                             <a href = "../gallery.html" class = "nav-link">Gallery</a>
                         </li>
-                        <!-- <li class = "nav-item">
-                            <a href = "blog.html" class = "nav-link">Blog</a>
-                        </li> -->
                         <li class = "nav-item">
                             <a href = "../explore.html" class = "nav-link">Explore</a>
                         </li>
@@ -77,83 +74,47 @@
         </nav>
         <!-- end of navbar  -->
 
-         <!-- header -->
-         <header class = "flex header-sm">
+        <!-- header -->
+        <header class = "flex header-sm">
             <div class = "container">
                 <div class = "header-title">
-                    <h1>Delightful  Kanha</h1>
-                    
+                    <h1>Delightful Kanha</h1>  
+                   
                 </div>
             </div>
         </header>
         <!-- header -->
 
-
-        <!-- about section -->
-        <section id = "about" class = "py-4">
+        <!-- blog section -->
+        <section id = "blog" class = "py-4">
             <div class = "container">
+               
                 <div class = "title-wrap">
                     <span class = "sm-title">Listen Audio</span>
-                    
+                    <select id="voices">  </select>
                     <span><div class="video-btn">
-                        <p class="lead text-light mt-4">Select Voice</p>
-                         <select id="voices" class="form-select bg-secondary text-light"></select>
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        <p class="lead">Volume</p>
-                        <input type="range" min="0" max="1" value="1" step="0.1" id="volume" />
-                        <span id="volume-label" class="ms-2">1</span>
-                        </div></span>
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
-            </div>
                 
                 <div class = "about-row">
                     <div class = "about-left my-2">
-                        <img src = "img/kanha-2.jpg" alt = "about img">
-                    </div>
-                    <div class = "about-right" id="para">
-                        <p class="text">The largest national park in Madhya Pradesh with 941sq. km expansion, Kanha National Park is considered to be one of the best administered and managed parks in India. It is one of the Navratanas of the 'Project Tiger'.Kanha Tiger Reserve, also called Kanha National Park, is one of the tiger reserves of India and the largest national park of Madhya Pradesh, state in the heart of India. The present-day Kanha area is divided into two sanctuaries, Hallon and Banjar, of 250 and 300 km2 respectively. Kanha National Park was created on 1 June 1955 and in 1973 was made the Kanha Tiger Reserve. Today it stretches over an area of 940 km2 in the two districts Mandla and Balaghat.</p>
-                        <p class="text">Apart from the majestic royal Bengal tigers, Kanha inhabits barasingha as well, which was very close to extinction. It was then a successful conservation programme at Kanha National Park, Madhya Pradesh, that brought the animal back. Therefore the park is respected globally for saving the barasingha from near extinction. It is interesting to know that 'Bhoorsingh the Barasingha' is the official mascot for Kanha National Park. You will also get to spot bison roaming freely in their natural surroundings of Kanha.</p>
-                       
-                    </div>
-                </div>
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        
-                            <p class="text"><b>Kanha Museum </b> <br>The Kanha Museum is yet another attraction of the park and is located inside the vicinity. The Kanha Museum could be the most suited place for the wildlife lovers to get acquainted with the topography and different interesting aspects about the park. The museum also depicts different attributes and activities of the park and the tribal culture of the state of Madhya Pradesh.</p>
-                            <p class="text"><b>Kawardha Palace</b><br> A simple three hours drive from Kanha Reserve can take the visitors to this astounding palace which was built during the year of 1936-39 by the King Dharamraj Singh. Now the area being famed as the traditional resort is being spread in eleven acres and is being adorned with beautiful Italian Marble. The other attractions near the Kawardha Palace are Mandawa mahal, Krishna Temple, Madan manjari Mahal and Bhoremdeo Temple.</p>
-                           
-                        
-                    </div>
-                    <div class = "about-left ">
-                        <img src = "img/kanha-1.jpg" alt = "about img">
-                       
-                    </div>
-                </div>
-
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/kanha-3.jpg" alt = "about img">
+                        <img src = "img/kanha-2.jpg" alt = "about img"><br>
+                        <img src="img/kanha-1.jpg" alt="img">
                     </div>
                     <div class = "about-right">
-                        <h3>Baiga Tribe</h3>
-                        <p class="text">The Baiga, also known as Panda, are an ethnic group found in central India primarily in the state of Madhya Pradesh, and in smaller numbers in the surrounding states of Uttar Pradesh, Chhattisgarh and Jharkhand. The largest number of Baiga is found in Baiga-chuk in Mandla district and Balaghat district of Madhya Pradesh, where they inhabits the dense hilly forests in the eastern part. They have sub-castes – Bijhwar, Narotia, Bharotiya, Nahar, Rai Bhaina, and Kadh Bhaina. The 2011 Census of India reported they number 17.387.</p>
-                        <p class = " text">Spending some time with the Baiga tribe will be an all new experience. You can even learn to make tribal silver jewelry which is believed to be one of its kind. You can either shop the artefact as ornament or as a souvenir from Kanha.</p>
+                     <p class="text" id="textospeech">Kanha National Park is nestled in the Maikal range of Satpuras in Madhya Pradesh, the heart of India that forms the central Indian highlands.The national park is being popularized as the Tiger reserve and interestingly is being declared as one of the finest wildlife areas in the world. Spreading across two revenue districts the Mandala and the Kalaghat, Kanha National Park was declared a reserve forest in 1879 and revalued as a wildlife sanctuary in 1933. Its position was further upgraded to a national park in 1955.<br><br>The Kanha National Park is spread across the area of 940 sq km in the Maikal chain of hills. By bringing up the buffer and core zone all together, the Kanha Tiger Reserve has the total area of 1945 sq km.<br><br>The landscapes and the surrounding luxurious meadows along with the wooded strands and the dense maroons of forests offer magnanimous sightseeing experiences for the nature lovers. Making the land more beautiful and adorable, the crystal clear streams amidst the dense jungle cleanses the surroundings and makes the wildlife unrivalled. This vivacious land has been the source of inspiration for Rudyard Kipling, a famous writer for his outstanding creation- “The Jungle Book”.<br><br>he Kanha National Park is the ideal home for wide ranges of wild creatures; right from the mighty tigers to the most populated Barasingha and the countless species of plants, birds, reptiles and insects. This reserve has fascinated many travelers around the corners of the world with its well developed infrastructure specially meant for them. The best location here to enjoy the most is the Bammi Dadar, also known as the Sunset Point.<br><br><b>Kanha Mueseum</b>The Kanha Museum is yet another attraction of the park and is located inside the vicinity. The Kanha Museum could be the most suited place for the wildlife lovers to get acquainted with the topography and different interesting aspects about the park. The museum also depicts different attributes and activities of the park and the tribal culture of the state of Madhya Pradesh.</p>
                     </div>
+                </div>
 
-                
-
+                              
             </div>
-
         </section>
-        <!-- end of about section -->
-
-
-
-       
+        <!-- end of blog section -->
+        
 
         <!-- footer -->
         <footer class = "py-4">
@@ -199,11 +160,11 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
                     </ul>
                 </div>
 
@@ -214,6 +175,7 @@
 
         <!-- js -->
         <script src = "js/script.js"></script>
+
         <script src = "js/audio.js"></script>
         <script>
             

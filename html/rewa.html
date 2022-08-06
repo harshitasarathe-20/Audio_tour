@@ -95,54 +95,28 @@
                 <div class = "title-wrap">
                     <span class = "sm-title">Listen Audio</span>
                     
-                    <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
-                </div>
-
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/rewa-1.jpg" alt = "about img">
-                    </div>
-                    <div class = "about-right">
-                        <p class="text">Waterfalls of dizzying heights, rare and beautiful white tigers, towering forts, majestic palaces and ancient temples are just few of the sights that adorn a town in the north west of Madhya Pradesh. That town is Rewa, which is another name for river Narmada.</p>
-                        <p class = "text">Blessed with natural beauty, the city of Rewa is situated on the north-western side of Madhya Pradesh. The city has frolicking streams gushing from the mountains and lush green forests.The most visited place in Rewa is a nearby village, Mukundpur,District Satna which is best known for the 'White Tiger Zoo & Safari'. It was home to Mohan - the world renowned white tiger. Watching the surreal white tiger strolling in the wild is the moment you can not miss.</p>    
-                        
-                </div>
-                </div>
-                <div class = "about-row">
                     
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            <p class="text">It was Maharaja Martand Singhji, the former ruler of Rewa, who introduced white tigers to the place. While on a hunting expedition, he spotted a white tiger cub. After a long chase, the king and his men managed to capture the cub. Mohan, as Maharaja called it fondly, was given an open courtyard to play in the king's 150-room palace. With time, white tigers grew in numbers bringing Rewa & Satna the popularity it deserved. </p>
-                            <p class="text">Rewa and its surroundings echo with the melodies of several waterfalls like the Keoti falls, Purva falls and the 142m high Bahuti falls to name a few. What adds to this natural beauty is the white tiger safari at the vast Mukundpur Zoo, situated in District Satna, the only one in the world.</p>
-                           
-                        </article>
-                    </div>
-                    <div class = "about-left ">
-                        <img src = "img/rewa-2.jpg" alt = "about img">
-                       
-                    </div>
+                    <select id="voices">  </select>
+                    <span><div class="video-btn">
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
 
                 <div class = "about-row">
                     <div class = "about-left my-2">
+                        <img src = "img/rewa-1.jpg" alt = "about img"><br>
+                        <img src = "img/rewa-2.jpg" alt = "about img"><br>
                         <img src = "img/rewa-3.jpg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <h3>Other places in Rewa</h3>
-                        <p class="text"><b>Keoti Falls<br></b>Bow down to the 24th highest waterfall in India, Keoti fall is undoubtedly one of the best waterfalls in Madhya Pradesh created by nature for a breathtaking experience. River Mahana is a tributary of river Tons and Keoti fall is the drop of River Mahana from Rewa Plateau. Cascading from a height of 130 meters, you can even freeze the alluring drop in your camera lenses.</p>
-                        <p class = " text"><b>Deur Kothar<br></b>This archaeological site has a great history to tell with the ancient Buddhist stupas that you will find here. Discovered in the year 1982, these stupas are said to be about two thousand years old and belonging to the Ashoka's reign. You will find three large stupas carved out of clay bricks and several small stupas out of 46 different stones.
-
-                        </p>
-                    </div>
-
-
-
+                        <p class="text" id="texttospeech">Waterfalls of dizzying heights, rare and beautiful white tigers, towering forts, majestic palaces and ancient temples are just few of the sights that adorn a town in the north west of Madhya Pradesh. That town is Rewa, which is another name for river Narmada.<br><br>Blessed with natural beauty, the city of Rewa is situated on the north-western side of Madhya Pradesh. The city has frolicking streams gushing from the mountains and lush green forests.The most visited place in Rewa is a nearby village, Mukundpur,District Satna which is best known for the 'White Tiger Zoo & Safari'. It was home to Mohan - the world renowned white tiger. Watching the surreal white tiger strolling in the wild is the moment you can not miss.<br><br>It was Maharaja Martand Singhji, the former ruler of Rewa, who introduced white tigers to the place. While on a hunting expedition, he spotted a white tiger cub. After a long chase, the king and his men managed to capture the cub. Mohan, as Maharaja called it fondly, was given an open courtyard to play in the king's 150-room palace. With time, white tigers grew in numbers bringing Rewa & Satna the popularity it deserved. <br><br>Rewa and its surroundings echo with the melodies of several waterfalls like the Keoti falls, Purva falls and the 142m high Bahuti falls to name a few. What adds to this natural beauty is the white tiger safari at the vast Mukundpur Zoo, situated in District Satna, the only one in the world.<br><br><b>Keoti Falls<br></b>Bow down to the 24th highest waterfall in India, Keoti fall is undoubtedly one of the best waterfalls in Madhya Pradesh created by nature for a breathtaking experience. River Mahana is a tributary of river Tons and Keoti fall is the drop of River Mahana from Rewa Plateau. Cascading from a height of 130 meters, you can even freeze the alluring drop in your camera lenses.<br><br><b>Deur Kothar<br></b>This archaeological site has a great history to tell with the ancient Buddhist stupas that you will find here. Discovered in the year 1982, these stupas are said to be about two thousand years old and belonging to the Ashoka's reign. You will find three large stupas carved out of clay bricks and several small stupas out of 46 different stones.   </p>       </div>
+               
+                     </div>
             </div>
+            
 
         </section>
         <!-- end of about section -->
@@ -195,11 +169,10 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
                     </ul>
                 </div>
 
