@@ -16,10 +16,32 @@
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+      `<style>
+            header{
+                min-height: 100vh;
+                padding-top: 7rem;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/bhimbetka-1.jpg) center/cover no-repeat;
+                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bhimbetka-1.jpg) center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bhimbetka-1.jpg) center/cover no-repeat;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                color: #fff;
+                text-align: center;
+            }
+            .nav-link {
+                color: white;;
+            }
+
+            .site-brand {
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <!-- navbar  -->
-        <nav class = "navbar" style="background-color: grey">
+        <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
                     Tour &<span><br>Explore</span>
@@ -54,53 +76,48 @@
         </nav>
         <!-- end of navbar  -->
 
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Amazing Bhimebetka</h1>  
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+
 
         <!-- about section -->
         <section id = "about" class = "py-4">
             <div class = "container">
                 <div class = "title-wrap">
-                    <span class = "sm-title"></span>
-                    <h2 class = "lg-title">Amazing <span class="heading-e" >Bhimebetka</span></h2>
-                    <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                    <span class = "sm-title">Listen Audio</span>
+                    <select id="voices">  </select>
+                    <span>
+                        <div class="video-btn">
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
 
                 <div class = "about-row">
                     <div class = "about-left my-2">
-                        <img src = "img/bhimbetka-1.jpg" alt = "about img">
+                        <img src = "img/bhimbetka-8-.jpeg" alt = "about img"><br>
+                        <img src = "img/bhimbetka-11.jpeg" alt="about img"><br>
+                        <img src = "img/bhimbetka-12.jpg" alt="about img">
                     </div>
+                    
                     <div class = "about-right">
-                        
-                        <p class = "text">The Bhimbetka rock shelters are an archaeological site in central India that spans the Paleolithic and Mesolithic periods, as well as the historic period. It exhibits the earliest traces of human life in India and evidence of Stone Age starting at the site in Acheulian times. It is located in the Raisen District in the Indian state of Madhya Pradesh about 45 kilometres (28 mi) south-east of Bhopal. It is a UNESCO World Heritage Site that consists of seven hills and over 750 rock shelters distributed over 10 km (6.2 mi). At least some of the shelters were inhabited more than 100,000 years ago. The rock shelters and caves provide evidence of, according to Encyclopædia Britannica, a "rare glimpse" into human settlement and cultural evolution from hunter-gatherers, to agriculture, and expressions of prehistoric spirituality.</p>
+
+                        <p class="text" id = "texttospeech">The Bhimbetka rock shelters are an archaeological site in central India that spans the Paleolithic and Mesolithic periods, as well as the historic period. It exhibits the earliest traces of human life in India and evidence of Stone Age starting at the site in Acheulian times. It is located in the Raisen District in the Indian state of Madhya Pradesh about 45 kilometres (28 mi) south-east of Bhopal. It is a UNESCO World Heritage Site that consists of seven hills and over 750 rock shelters distributed over 10 km (6.2 mi). At least some of the shelters were inhabited more than 100,000 years ago. The rock shelters and caves provide evidence of, according to Encyclopædia Britannica, a "rare glimpse" into human settlement and cultural evolution from hunter-gatherers, to agriculture, and expressions of prehistoric spirituality.<br><br>Bhimbetka meaning "Bhima's resting place" or "Bhima's lounge", is compound word made of Bhima (second brother among the five Pandavas of Mahabharata) and Baithaka (seat or lounge). According to the native belief, Bhima during his exile used to rest here to interact with the locals.<br><br>The Bhimbetka rock shelters are a canvas for some of the oldest paintings in India. Most of these are done in red and white on the cave walls. A multitude of themes were covered in this form of rock art and it depicted scenes like singing, dancing, hunting and other common activities of the people staying there. This also adds strength to the argument that the caves used to be home for hundreds of people sometime during 300 BC. The oldest of the cave paintings in Bhimbetka is believed to be about 12,000 years ago.The paintings have been divided into various periods like Upper Paleolithic, Mesolithic, Chalcolithic, Early History and Medieval history. They are present in 500 caves out of the total of 750.<br><br>The paintings in the Bhimbetka Rock Shelters are divided into different groups. There is one group that majorly represents hunters and food gatherers, and the other group has paintings of fighters, riding horses and elephants carrying weapons. The first group is said to be a representation of pre-historic times, whereas the latter represents the historic times.<br><br><b>Period I (Upper Paleolithic): </b> The paintings during this period showed a lot of linear representations and were painted in greens and dark reds. The figures of the animals in these paintings were pretty huge, and it majorly included bison, tiger and rhinoceros.<br><br><b>Period II (Mesolithic): </b> The paintings during Mesolithic were comparatively smaller than Upper Paleolithic paintings. In addition to animals in those paintings, there were paintings of humans as well. There were also clear paintings of weapons during this time.<br><br><b>Period III (Chalcolithic): </b> The paintings during this period were pretty similar to Mesolithic paintings. But these paintings showed the fact that the then dwellers made contact with other agricultural communities for exchange of food<br><br><b>Period IV & Period V (Early Historic): </b> The human figures during this period got more decorative and schematic in style. The paints which became very prominent were red, white and yellows. There were many depictions of religious symbols, these religious motifs included tree Gods and magical flying chariots.<br><br><b>Period VI & Period VI (Medieval): </b> The paintings of this period were geometrically linear and more schematic. There was a certain crudeness that was evident in the artist style. The paints were made from black manganese oxides, red hematite and charcoal.<br><br>The paintings are classified largely in two groups, one as depictions of hunters and food gatherers, and in others as fighters, riding on horses and elephant carrying metal weapons. The first group of paintings date to prehistoric times while second one dates to historic times. Most of the paintings from the historic period depict battles between rulers carrying swords, spears, bows and arrows.</p>
+  
                     </div>
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        <h2></h2>
-                        <!-- <h2>15 Years of Experience</h2> -->
-                        <article>
-                        <p class = "text">Bhimbetka meaning "Bhima's resting place" or "Bhima's lounge", is compound word made of Bhima (second brother among the five Pandavas of Mahabharata) and Baithaka (seat or lounge). According to the native belief, Bhima during his exile used to rest here to interact with the locals.</p>
-                        <p class = "text">The Bhimbetka rock shelters are a canvas for some of the oldest paintings in India. Most of these are done in red and white on the cave walls. A multitude of themes were covered in this form of rock art and it depicted scenes like singing, dancing, hunting and other common activities of the people staying there. This also adds strength to the argument that the caves used to be home for hundreds of people sometime during 300 BC. The oldest of the cave paintings in Bhimbetka is believed to be about 12,000 years ago.The paintings have been divided into various periods like Upper Paleolithic, Mesolithic, Chalcolithic, Early History and Medieval history. They are present in 500 caves out of the total of 750.                    
-                            </p>
-                        <p class="text">The paintings in the Bhimbetka Rock Shelters are divided into different groups. There is one group that majorly represents hunters and food gatherers, and the other group has paintings of fighters, riding horses and elephants carrying weapons. The first group is said to be a representation of pre-historic times, whereas the latter represents the historic times.</p>
-                        <p class = "text"><b>Period I (Upper Paleolithic): </b> The paintings during this period showed a lot of linear representations and were painted in greens and dark reds. The figures of the animals in these paintings were pretty huge, and it majorly included bison, tiger and rhinoceros.</p>
-                        <p class = "text"><b>Period II (Mesolithic): </b> The paintings during Mesolithic were comparatively smaller than Upper Paleolithic paintings. In addition to animals in those paintings, there were paintings of humans as well. There were also clear paintings of weapons during this time.</p>                            
-                        <p class = "text"><b>Period III (Chalcolithic): </b> The paintings during this period were pretty similar to Mesolithic paintings. But these paintings showed the fact that the then dwellers made contact with other agricultural communities for exchange of food</p>
-                        <p class = "text"><b>Period IV & Period V (Early Historic): </b> The human figures during this period got more decorative and schematic in style. The paints which became very prominent were red, white and yellows. There were many depictions of religious symbols, these religious motifs included tree Gods and magical flying chariots.</p>
-                        <p class = "text"><b>Period VI & Period VI (Medieval): </b> The paintings of this period were geometrically linear and more schematic. There was a certain crudeness that was evident in the artist style. The paints were made from black manganese oxides, red hematite and charcoal.</p>
-                       
-                        
-                        </article>
-                    </div>
-                    <div class = "about-left ">
-                        <img src = "img/bhimbetka-8-.jpeg" alt = "about img">
-                    </div>
-                </div>
+
             </div>
 
         </section>
@@ -238,6 +255,7 @@
 
         <!-- js -->
         <script src = "js/script.js"></script>
+        <script src = "js/audio.js"></script>
         <script>
             
         </script>
