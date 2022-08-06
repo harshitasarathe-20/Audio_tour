@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Orchha</title>
+        <title>Orccha</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- font awesome cdn -->
@@ -16,10 +16,33 @@
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+
+        <style>
+            header{
+                min-height: 100vh;
+                padding-top: 7rem;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/orchha.jpg) center/cover no-repeat;
+                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/orchha.jpg) center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/orchha.jpg) center/cover no-repeat;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                color: #fff;
+                text-align: center;
+            }
+            .nav-link {
+                color: white;;
+            }
+
+            .site-brand {
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <!-- navbar  -->
-        <nav class = "navbar" style="background-color: grey">
+        <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
                     Tour &<span><br>Explore</span>
@@ -39,9 +62,6 @@
                         <li class = "nav-item">
                             <a href = "../gallery.html" class = "nav-link">Gallery</a>
                         </li>
-                        <!-- <li class = "nav-item">
-                            <a href = "blog.html" class = "nav-link">Blog</a>
-                        </li> -->
                         <li class = "nav-item">
                             <a href = "../explore.html" class = "nav-link">Explore</a>
                         </li>
@@ -54,123 +74,127 @@
         </nav>
         <!-- end of navbar  -->
 
-
-        <!-- about section -->
-        <section id = "about" class = "py-4">
+        <!-- header -->
+        <header class = "flex header-sm">
             <div class = "container">
-                <div class = "title-wrap">
-                    <span class = "sm-title"></span>
-                    <h2 class = "lg-title">Majestic <span class="heading-e"  >Orchha</span></h2>
-                    <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                <div class = "header-title">
+                    <h1>Majestic Orchha</h1>  
+                   
                 </div>
+            </div>
+        </header>
+        <!-- header -->
 
+        <!-- blog section -->
+        <section id = "blog" class = "py-4">
+            <div class = "container">
+               
+                <div class = "title-wrap">
+                    <span class = "sm-title">Listen Audio</span>
+                    <select id="voices">  </select>
+                    <span><div class="video-btn">
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
+                </div>
+                
                 <div class = "about-row">
                     <div class = "about-left my-2">
                         <img src = "img/orchha-1.jpg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <p class="text">Orchha literally means ‘hidden place’ and it stays true to its name! Located in Madhya Pradesh, Orchha isn’t on most tourist maps and several travelers club their visit to Orchha with a trip to Jhansi (16 km away) or Khajuraho (170 km away). But with beautiful monuments, both big and small, revealing tales of battles between kings and emperors, Orchha deserves a trip of its own.</p>
-                        <p class="text">Once the capital of the Bundela Rajput kings, Orchha was established by Maharaja Rudra Pratap Singh in 1501. The medieval city has since seemingly frozen in time. Its several monuments continue to retain their original grandeur even as the city itself seems quite content to be hidden away from the throngs of tourists that descend upon Madhya Pradesh year after year.</p>
-                        <p class="text">The historic town of Orchha, nestled on the banks of river Betwa.Here, the river Betwa splits into seven channels, also called the Satdhara. Legend goes that this is in honour of the seven erstwhile Chiefs of Orchha.</p>
+                        <p class="text" id="textospeech">Orchha literally means ‘hidden place’ and it stays true to its name! Located in Madhya Pradesh, Orchha isn’t on most tourist maps and several travelers club their visit to Orchha with a trip to Jhansi (16 km away) or Khajuraho (170 km away). But with beautiful monuments, both big and small, revealing tales of battles between kings and emperors, Orchha deserves a trip of its own.<br><br>Once the capital of the Bundela Rajput kings, Orchha was established by Maharaja Rudra Pratap Singh in 1501. The medieval city has since seemingly frozen in time. Its several monuments continue to retain their original grandeur even as the city itself seems quite content to be hidden away from the throngs of tourists that descend upon Madhya Pradesh year after year.<br><br>The historic town of Orchha, nestled on the banks of river Betwa.Here, the river Betwa splits into seven channels, also called the Satdhara. Legend goes that this is in honour of the seven erstwhile Chiefs of Orchha.                        </p>
                     </div>
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            <p class="text"><a href="#" class="cg-link"><b>Orchha Fort </b></a><br>It is also known as “Jahangir’s Palace” located inside the Fort of Agra built for his son Jahangir to use as a residence for his stay. It symbolizes the Mughal Architecture of 16th century made up of red stone and white marble. It is one of the buildings were entering you will see the Agra Fort when visited gate via Amar Singh.</p>
-                            <p class="text"><a href="#" class="cg-link"><b>Ram Raja Temple</b></a><br>IThis is one of the important tourist points for the travelers. It is one of the fascinating temples in Orchha, which has historical tales behind it. This was a palace for the ruler Madhukar Shah at years ago. This temple is the only temple where Lord Rama is worshipped as King Rama as it holds a mark of religious importance </p>
-                            <p class="text"><a href="#" class="cg-link"><b>Raja Mahal</b></a><br>Raja Mahal is also known as “Raja Mandir.” The Mahal is built by Rudra Pratap Singh which started during the 16th century and ended on 17th century. The Mahal is full of lavish accommodations with elevated balconies. The interiors of the Mahal is of mirrors and murals which are plastered on the ceilings and walls of the Mahal. These interiors make a great impact on the art enthusiast.</p>
-                            <p class="text"><a href="#" class="cg-link"><b>Chhatris</b></a><br>It is also known as Chattris or Cenotaphs. Chattris is situated at the bank of Betwa River. There are about 14 Chattris, which are grouped in a row along the Kanchan Ghat of the Betwa River, which marks as a respect for the blue blood of mighty rulers of Bundelkhand. These chattris are tombs of maharajas that have been elevated on the platforms and supported by pillars. Its unique architecture style and beautiful design makes an ideal place for tourist attractions.</p>
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/orchha-7.jpg" alt = "about img">
-                       
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- end of about section -->
-
-
-
-        <!-- popular places section -->
-        <section id = "popular" class = "py-4">
-            <div class = "title-wrap">
-              
-                <h2 class = "lg-title">Best Places To Visit</h2>
-            </div>
-
-            <div class = "popular-row">
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-2.jpg" alt = "">
-                    <div>
-                        
-                        <p class = "text-p">Ram Raja Temple in Orchha is the only temple where Lord Rama is worshipped as a king.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-3.jpg" alt = "">
-                    <div>
-                        <p class = "text-p">The 'Chhatris' or cenotaphs of Orchha were constructed in honour of its rulers. These are grouped along the beautiful River Betwa.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-4.jpg" alt = "">
-                    <div>
-                        <p class = "text-p"> Orchha Retreat</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-5.jpg" alt = "">
-                    <div>
-                         <p class = "text-p">Dedicated to lord Vishnu, Chaturbhuj Temple is the main tourist attraction in Orchha.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-6.jpg" alt = "">
-                    <div>
-                        <p class = "text-p">Lakshmi Narain Temple - An intriguing mix of a fort and a temple, its walls are elaborately decorated with fabulous mural paintings, which show compositions from mythological themes. </p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-8.jpg" alt = "">
-                    <div>
-                     <p class = "text-p">Sound & Light show is conducted every evening to enthuse those interested in knowing the rich history of Orchha.</p>
-                    </div>
-                </div>
-
-
-
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-9.jpg" alt = "">
-                    <div>
-                        
-                        <p class = "text-p">The Orchha bird sanctuary is a paradise for bird-watchers as it is home to various types of in-house and migrant birds.</p>
-                    </div>
-                </div>
-                <div class = "popular-item shadow">
-                    <img src = "img/orchha-10.jpg" alt = "">
-                    <div>
+                <div class = "title-wrap">
                    
-                        <p class = "text-p">River Rafting in Betwa River offers one of its kind experience. You can do sightseeing of the popular Chhatris of Orchha as you raft.</p>
-                    </div>
+                    <h3 class = "lg-title">Best Places to Visit</h3>
+                   
                 </div>
+
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/orchha-2.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="ramraja.html"><b>1. Ram Raja Temple</b></a>
+                            <a class="heritage-txt">Ram Raja Temple in Orchha is the only temple where Lord Rama is worshipped as a king.</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/orchha-3.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="chattris.html"><b>2. Chattris</b></a>
+                            <a class="heritage-txt">The 'Chhatris' or cenotaphs of Orchha were constructed in honour of its rulers. These are grouped along the beautiful River Betwa..</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/orchha-5.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="chatturbhuj.html"><b>3. Chaturbhuj Temple</b></a>
+                            <a class="heritage-txt">Dedicated to lord Vishnu, Chaturbhuj Temple is the main tourist attraction in Orchha.</a>
+                           
+                        </div>
+                    </div>
+  
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/orchha-9.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="orcchasanctuary.html"><b>4. Orccha Bird Sanctuary</b></a>
+                            <a class="heritage-txt">The Orchha bird sanctuary is a paradise for bird-watchers as it is home to various types of in-house and migrant birds.</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/orchha-6.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="lakshminarain.html"><b>5. Lakshmi Narain Temple</b></a>
+                            <a class="heritage-txt">An intriguing mix of a fort and a temple, its walls are elaborately decorated with fabulous mural paintings, which show compositions from mythological themes.</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/orchha-8.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="lightshow.html"><b>6. Light Show</b></a>
+                            <a class="heritage-txt">Sound & Light show is conducted every evening to enthuse those interested in knowing the rich history of Orchha.</a>
+                           
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
             </div>
         </section>
+        <!-- end of blog section -->
         
 
         <!-- footer -->
@@ -217,11 +241,11 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
                     </ul>
                 </div>
 
@@ -232,6 +256,7 @@
 
         <!-- js -->
         <script src = "js/script.js"></script>
+
         <script src = "js/audio.js"></script>
         <script>
             

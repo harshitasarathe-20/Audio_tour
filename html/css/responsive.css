@@ -80,6 +80,7 @@
     .header-title h1{
         font-size: 4rem;
         font-family: cursive;
+        text-transform: uppercase;
     }
     .header-form form{
         -webkit-box-orient: horizontal;

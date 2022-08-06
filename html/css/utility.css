@@ -7,6 +7,12 @@ h1, h2, h3, h4, h5, h6{
 a{
     color: var(--dark);
     text-decoration: none;
+    font-family: 'Font Awesome 5 Free';
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-size: 2rem;   
 }
 ul{
     list-style-type: none;
@@ -98,7 +104,7 @@ button, input[type = "submit"]{
 }
 
 .audio-btn {
-    border: 1px solid;
+    border: 1px solid ;
     background-color:var(--green);
     color: white;
     padding: 12px 16px;
@@ -131,6 +137,8 @@ img{
     width: 100%;
     display: block;
 }
+
+
 .title-wrap{
     text-align: center;
     padding: 1.4rem 0;
@@ -166,7 +174,7 @@ img{
 .heading-e {
     font-family: 'Cinzel Decorative', cursive;
     margin-left: 8px;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0px;
 }
 

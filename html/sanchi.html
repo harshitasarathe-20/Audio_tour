@@ -16,10 +16,33 @@
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+
+        <style>
+            header{
+                min-height: 100vh;
+                padding-top: 7rem;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/sanchi.jpeg) center/cover no-repeat;
+                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/sanchi.jpeg) center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/sanchi.jpeg) center/cover no-repeat;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                color: #fff;
+                text-align: center;
+            }
+            .nav-link {
+                color: white;;
+            }
+
+            .site-brand {
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <!-- navbar  -->
-        <nav class = "navbar" style="background-color: grey">
+        <nav class = "navbar">
             <div class = "container flex">
                 <a href = "index.html" class = "site-brand">
                     Tour &<span><br>Explore</span>
@@ -39,9 +62,6 @@
                         <li class = "nav-item">
                             <a href = "../gallery.html" class = "nav-link">Gallery</a>
                         </li>
-                        <!-- <li class = "nav-item">
-                            <a href = "blog.html" class = "nav-link">Blog</a>
-                        </li> -->
                         <li class = "nav-item">
                             <a href = "../explore.html" class = "nav-link">Explore</a>
                         </li>
@@ -54,122 +74,115 @@
         </nav>
         <!-- end of navbar  -->
 
-
-        <!-- about section -->
-        <section id = "about" class = "py-4">
+        <!-- header -->
+        <header class = "flex header-sm">
             <div class = "container">
-                <div class = "title-wrap">
-                    <span class = "sm-title"></span>
-                    <h2 class = "lg-title">Sacred <span class="heading-e" >Sanchi</span></h2>
-                    <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                <div class = "header-title">
+                    <h1>Sacred Sanchi</h1>  
+                   
                 </div>
+            </div>
+        </header>
+        <!-- header -->
 
+        <!-- blog section -->
+        <section id = "blog" class = "py-4">
+            <div class = "container">
+               
+                <div class = "title-wrap">
+                    <span class = "sm-title">Listen Audio</span>
+                    <select id="voices">  </select>
+                    <span><div class="video-btn">
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
+                </div>
+                
                 <div class = "about-row">
                     <div class = "about-left my-2">
-                        <img src = "img/sanchi-1.jpg" alt = "about img">
+                        <img src = "img/sanchi-1.jpeg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <p class = "text">The town of Sanchi is synonymous with Buddhist Stupas - hemispherical structures typically containing relics of the Buddha or his followers. The Stupas of Sanchi were constructed on the orders of Emperor Ashoka to preserve and spread the Buddhist philosophy. Sanchi has been protecting these beautiful and sacred architectural wonders, just the way these wonders have been safeguarding ancient history and art of the Mauryan period.</p>    
-                        <p class = "text">Located in Madhya Pradesh, the Buddhist monuments of Sanchi are one of the oldest stone structures in India. Designated a World Heritage site by UNESCO, the Great Stupa was installed in the 3rd century BC by Emperor Ashoka of the Mauryan dynasty. The sculptures and monuments present at the site are a fine example of the development of Buddhist art and architecture in Madhya Pradesh. The stupa sits atop a hill in Sanchi, 46 km from the city of Bhopal. </p>
-                       
+                        <p class="text" id="textospeech">The town of Sanchi is synonymous with Buddhist Stupas - hemispherical structures typically containing relics of the Buddha or his followers. The Stupas of Sanchi were constructed on the orders of Emperor Ashoka to preserve and spread the Buddhist philosophy. Sanchi has been protecting these beautiful and sacred architectural wonders, just the way these wonders have been safeguarding ancient history and art of the Mauryan period.<br><br>Located in Madhya Pradesh, the Buddhist monuments of Sanchi are one of the oldest stone structures in India. Designated a World Heritage site by UNESCO, the Great Stupa was installed in the 3rd century BC by Emperor Ashoka of the Mauryan dynasty. The sculptures and monuments present at the site are a fine example of the development of Buddhist art and architecture in Madhya Pradesh. The stupa sits atop a hill in Sanchi, 46 km from the city of Bhopal.</p>
                     </div>
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            <p class = "text">This large hemispherical dome, more than 50 ft high with a diameter of more than 30m was constructed to honour Lord Buddha and houses many important Buddhist relics. It is meant to serve as a sacred burial mound for the distributed remains of Lord Buddha.</p>
-                            <p class = "text" >Sanchi is known for its ancient Stupas, monasteries, the Ashoka Pillar, Toranas or ornate gateways with intricate carvings and other remnants of the rich Buddhist culture which date back to the 3rd century B. C. It is one of the most important places for Buddhist pilgrimage and pilgrims from around the world visit this place.</p>
-                            <p class = "text"><b> ASI museum <br></b>The highlight of the archaeological museum is the top of the pillar that Emperor Ashoka installed next to the Great Stupa. This stunning pillar capital has a bell-shaped unfolded lotus that is supporting four lions seated back-to-back. The lions show a sense of vitality and dignity – fitting for the inscription that was on the pillar beneath, in which Ashoka threatened to excommunicate any Buddhist who tried to create a schism.</p>
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/sanchi-6.jpg" alt = "about img">
-                       
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- end of about section -->
-
-
-
-        <!-- popular places section -->
-        <section id = "popular" class = "py-4">
-            <div class = "title-wrap">
-              
-                <h2 class = "lg-title">Best Places To Visit</h2>
-            </div>
-
-            <div class = "popular-row">
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-3.jpg" alt = "">
-                    <div>
-                        
-                        <p class = "text-p">Gupta Temple - This 5th century temple is one of the earliest known examples of temple architecture in India.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-2.jpg" alt = "">
-                    <div>
-                        <p class = "text-p">Situated close to the Great Stupa are the relics of two of Buddha?s earliest disciples - Sariputta and Mahamogallena.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-5.jpeg" alt = "">
-                    <div>
-                        <p class = "text-p">ASI Museum - The Archaeological Survey of India Museum has preserved noteworthy antiquities including the lion capital of the Ashokan pillar.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-4.jpg" alt = "">
-                    <div>
-                         <p class = "text-p">Buddhist Vihar - It used to be the residence of monks and has a specific area dedicated for communal activities.</p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-8.jpg" alt = "">
-                    <div>
-                        <p class = "text-p">Woodcraft Museum - The archaeological museum in Sanchi exhibits beautiful sculptures and objects belonging to medieval period </p>
-                    </div>
-                </div>
-
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-7.jpg" alt = "">
-                    <div>
-                     <p class = "text-p">Udaygiri Caves - These ancient caves, built during the reign of Chandragupta II, have all the features that gave Gupta art its unique identity.</p>
-                    </div>
-                </div>
-
-
-
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-9.jpg" alt = "">
-                    <div>
-                        
-                        <p class = "text-p">Bija Mandal - Vidisha town, the headquarters of Vidisha dsitrict, is located just 9 km from Sanchi. Vidisha was an important trade centre in 5th and 6th century and contains the ruins of the Bija Mandal Temple and Mosque, and Gumbaz Ka Makbara.</p>
-                    </div>
-                </div>
-                <div class = "popular-item shadow">
-                    <img src = "img/sanchi-10.jpg" alt = "">
-                    <div>
+                <div class = "title-wrap">
                    
-                        <p class = "text-p">Carvings of Ashoka Pillar at Sanchi.</p>
-                    </div>
+                    <h3 class = "lg-title">Best Places to Visit</h3>
+                   
                 </div>
+
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/sanchi-3.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="gupta.html"><b>1. Gupta Temple</b></a>
+                            <a class="heritage-txt"> This 5th century temple is one of the earliest known examples of temple architecture in India.</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/sanchi-5.jpeg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="asi.html"><b>2. ASI Museum</b></a>
+                            <a class="heritage-txt">The Archaeological Survey of India Museum has preserved noteworthy antiquities including the lion capital of the Ashokan pillar.</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/sanchi-9.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="bija.html"><b>3. Bija Mandal</b></a>
+                            <a class="heritage-txt">Vidisha town, the headquarters of Vidisha dsitrict, is located just 9 km from Sanchi.</a>
+                           
+                        </div>
+                    </div>
+  
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/sanchi-7.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="udaygiri.html"><b>4. Udaygiri Caves</b></a>
+                            <a class="heritage-txt">These ancient caves, built during the reign of Chandragupta II, have all the features that gave Gupta art its unique identity.</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/sanchi-8.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="woodcraft.html"><b>5. Woodcraft Museum</b></a>
+                            <a class="heritage-txt"> The archaeological museum in Sanchi exhibits beautiful sculptures and objects belonging to medieval period</a>
+                           
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
             </div>
         </section>
+        <!-- end of blog section -->
         
 
         <!-- footer -->
@@ -216,11 +229,11 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
                     </ul>
                 </div>
 
@@ -231,6 +244,7 @@
 
         <!-- js -->
         <script src = "js/script.js"></script>
+
         <script src = "js/audio.js"></script>
         <script>
             
