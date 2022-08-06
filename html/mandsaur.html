@@ -81,7 +81,7 @@
          <header class = "flex header-sm">
             <div class = "container">
                 <div class = "header-title">
-                    <h1>SUBLIME MANDSAUR</h1>
+                    <h1>Sublime Mandsaur</h1>
                     
                 </div>
             </div>
@@ -95,11 +95,13 @@
                 <div class = "title-wrap">
                     <span class = "sm-title">Listen Audio</span>
                     
+                    <select id="voices">  </select>
                     <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
 
                 <div class = "about-row">
@@ -107,52 +109,55 @@
                         <img src = "img/mandsaur-1.jpg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <p class="text">Believed to be in existence since the time of Mahabharata, Mandsaur has connection with Ramayana as well. It is believed to be the home town of Mandodari, wife of Ravana.Mandsaur is the result of the merger of two villages - Marh and Saur (or Dasaur). It has been ruled by a lot of prominent rulers of ancient as well as recent history.</p>
-                        <p class = "text">In 19th century before India's independence in 1947, Mandsaur was part of the princely state of Gwalior. It gave its name to the treaty with the Holkar Maharaja of Indore, who concluded the Third Anglo-Maratha War and the Pindari War in 1818. At the turn of the 20th century it was a centre of the Malwa opium trade.Mandsaur is a city and a municipality in Mandsaur district located on Border of Mewar and Malwa region of Madhya Pradesh state of central India. It is the administrative headquarters of Mandsaur District. The ancient Pashupatinath Temple is located in Mandsaur. It is also famous for large production of Opium around the world.Mandsaur Krishi mandi is biggest Mandi of MP mostly in Area wise and Quantity of grains.</p>
-                       
-                       
-                    </div>
-                </div>
-
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
                         
-                        <article>
-                            <h3>PashupathiNath Temple </h3>
-                            <p class="text">Pashupatinath Temple in Mandsaur, India is a famous Hindu temple of Lord Pashupatinath with less importance than that of mythologically sacred Pashupatinath of Kathmandu Nepal. It is situated on the banks of the Shivna River. pashupatinath-templePashupatinath Temple is one of the prominent shrines in the city of Mandsaur in Madhya Pradesh. Lord Shiva in the form of Pashupatinath is the principal deity here. The highlight is a unique Shiv Ling with eight faces of Lord Shiva. The eight-faced idol is still the same as it was left by the sculptors in that era, the lower faces have been partially worked upon and they are not as clear as the upper four faces. The shrine has four doors in four directions.</p>
-                            <p class="text">The Shiv Ling in the temple is 8′ x 10.5′ and weighs 4.6 tons. The temple built on the river is 90 feet long, 30 feet wide and 101 feet tall. On top of the temple is a 100 kg gold plated pitcher. Every monsoon the water level in the Shivna river rises to touch the holy Shiv Ling of lord Shiva. This phenomenon is termed as “Jalaabhishek” which means worshiping god through the water.</p>
-                            <a href="#" class="text-link">Read more...</a>
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/mandsaur-2.jpg" alt = "about img">
-                       
+                        <p class="text" id="texttospeech">In 19th century before India's independence in 1947, Mandsaur was part of the princely state of Gwalior. It gave its name to the treaty with the Holkar Maharaja of Indore, who concluded the Third Anglo-Maratha War and the Pindari War in 1818. At the turn of the 20th century it was a centre of the Malwa opium trade.Mandsaur is a city and a municipality in Mandsaur district located on Border of Mewar and Malwa region of Madhya Pradesh state of central India. It is the administrative headquarters of Mandsaur District. The ancient Pashupatinath Temple is located in Mandsaur. It is also famous for large production of Opium around the world.Mandsaur Krishi mandi is biggest Mandi of MP mostly in Area wise and Quantity of grains.<br><br>Believed to be in existence since the time of Mahabharata, Mandsaur has connection with Ramayana as well. It is believed to be the home town of Mandodari, wife of Ravana.Mandsaur is the result of the merger of two villages - Marh and Saur (or Dasaur). It has been ruled by a lot of prominent rulers of ancient as well as recent history.</p>
                     </div>
                 </div>
 
-
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/mandsaur-3.jpg" alt = "about img">
-                    </div>
-                    
-                    <div class = "about-right">
-                        <h3>Buddhist Cave</h3>
-                        <p class="text">A few minutes walk from Dharmarajeshwar Temple are a series of Buddhist caves, dating back to the 5th century AD. The largest cave here is called Bhim Bazar and it contains a shrine enclosed within. </p>                  
-                       <h3>Dharmrajeshwar Cave Temple</h3>
-                        <p class="text">The Dharmrajeshwar Cave Temple is a brilliant example of Indian rock-cut architecture. The monolithic temple of Dharmarajeshwara is carved out of solid natural rock of size 50 metres in length, 20 metres in width and 9 metres in depth. The architectural similarity of this cave temple with the Kailashnath Temple of Ellora is truly fascinating. There is a main temple with a big Shivalingam along with a statue of Lord Vishnu. The entrance gate displays the engraved images of Lord Vishnu and Goddess Lakshmi. The main temple also has a sanctum with a Sabhamandapa and porch. The temple is almost 14 metres in length and 10 meters in depth and surrounding it are seven small temples. These smaller shrines are dedicated to various deities such as Lord Bhairav, Goddess Kali, Garuda and Goddess Parvati.</p>
-                    </div>
+                <div class = "title-wrap">
+                   
+                    <h3 class = "lg-title">Best Places to Visit</h3>
+                   
                 </div>
-               
+
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/mandsaur-2.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="pasupatinath.html"><b>1. Pashupatinath Temple</b></a>
+                            <a class="heritage-txt"><p>Pashupatinath Temple in Mandsaur, India is a famous Hindu temple of Lord Pashupatinath with less importance than that of mythologically sacred Pashupatinath of Kathmandu Nepal.<p></a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/mandsaur-3.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="chappan.html"><b>2. Dharmarajeshwara Cave Temple</b></a>
+                            <a class="heritage-txt"><p>The Dharmrajeshwar Cave Temple is a brilliant example of Indian rock-cut architecture. The monolithic temple of Dharmarajeshwara is carved out of solid natural rock of size 50 metres in length, 20 metres in width and 9 metres in depth. </p></a>
+                           
+                        </div>
+                    </div>
+
+                   
+                   
+                </div>
+
+
+                
             </div>
-        
 
         </section>
         <!-- end of about section -->
 
 
-        
+
        
 
         <!-- footer -->
@@ -199,11 +204,12 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
+                        
                     </ul>
                 </div>
 

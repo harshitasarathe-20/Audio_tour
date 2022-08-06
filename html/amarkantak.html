@@ -81,7 +81,7 @@
          <header class = "flex header-sm">
             <div class = "container">
                 <div class = "header-title">
-                    <h1>DIVINE AMRKANTAK</h1>
+                    <h1>Divine Amarkantak</h1>
                     
                 </div>
             </div>
@@ -95,11 +95,13 @@
                 <div class = "title-wrap">
                     <span class = "sm-title">Listen Audio</span>
                     
+                    <select id="voices">  </select>
                     <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
 
                 <div class = "about-row">
@@ -107,86 +109,79 @@
                         <img src = "img/amarkantak-1.jpeg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <p class="text">Amarkantak is a well frequented Hindu pilgrimage center that is popularly known as "Teerthraj" - "the king of pilgrimages"</p>
-                        <p class = "text">It is the meeting point of the Vindhya and the Satpura Ranges, with the Maikal Hills being the fulcrum. The forests surrounding Amarkantak have a rich variety of plants with medicinal properties, which make it extremely significant from an ecological point of view. Amarkantak is draped with lush mango trees and hence it is believed that the great Sanskrit poet Kalidasa visited Amarkantak and called it Amrakoot. This can be witnessed at Mai Ki Bagiya, which is a grove of mango and banana trees.</p>
-                        <p class="text">Three rivers - the holy Narmada, the Sone and the Johila emerge here from the womb of Amarkantak. A rising stream of Narmada can be seen at The Narmada Udgam Temple which is the most visited place in Amarkantak. Every year on the occasion of Narmada Jayanti, devotees in abundance gather here to attend the special event.Narmada Udgam temple is surrounded with wonderful natural wonders like Narmada kund, Sonemuda (the source of river Sone), plunging Dugdhara falls and the Kapildhara falls. </p>    
-                       <p class="text">The rich natural heritage and spiritual vibes of Amarkantak will fill your heart with happiness and positivity.</p>
+                        <h3>Amarkantak</h3>
+                        <p class="text" id="texttospeech">Amarkantak is a well frequented Hindu pilgrimage center that is popularly known as "Teerthraj" - "the king of pilgrimages".<br><br>It is the meeting point of the Vindhya and the Satpura Ranges, with the Maikal Hills being the fulcrum. The forests surrounding Amarkantak have a rich variety of plants with medicinal properties, which make it extremely significant from an ecological point of view. Amarkantak is draped with lush mango trees and hence it is believed that the great Sanskrit poet Kalidasa visited Amarkantak and called it Amrakoot. This can be witnessed at Mai Ki Bagiya, which is a grove of mango and banana trees.<br><br>Three rivers - the holy Narmada, the Sone and the Johila emerge here from the womb of Amarkantak. A rising stream of Narmada can be seen at The Narmada Udgam Temple which is the most visited place in Amarkantak. Every year on the occasion of Narmada Jayanti, devotees in abundance gather here to attend the special event.Narmada Udgam temple is surrounded with wonderful natural wonders like Narmada kund, Sonemuda (the source of river Sone), plunging Dugdhara falls and the Kapildhara falls.<br><br>The rich natural heritage and spiritual vibes of Amarkantak will fill your heart with happiness and positivity.</p>
                     </div>
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            <h3>Trimukhi Templei</h3>
-                            
-                            <p class="text">Situated on the top of a hill in Amarkantak, Trimukhi temple is known to be one of the oldest temples in India. Also known as 'Karna Mandir', after King Karnadeb Mahachandra, who built it and was constructed under the reign of the Kalachuris. The temple is dedicated to Lord Shiva, the destroyer of the universe as per Hindu mythology.</p>
-                            <p class="text">The top of the temple is sculpted with the face of Lord Shiva. This shows the immense intricacies carved out by the Kalchuri craftsmen. It is in close proximity to other attractions like Dudh Dhara Falls, Sonmuda, Kabir Chabutra, Mai ki Bagiya and Bhrugu Ka Mandal are some of the other places of tourist interest near the Trimukhi temple.</p>
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/amarkantak-3.jpg" alt = "about img">
-                       
-                    </div>
+                <div class = "title-wrap">
+                   
+                    <h3 class = "lg-title">Best Places to Visit</h3>
+                   
                 </div>
 
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/amarkantak-3.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="trimukhi.html"><b>1. Trimukhi Temple</b></a>
+                            <a class="heritage-txt"><p>Trimukhi Temple is located atop a hill in Amarkantak and was constructed under the reign of the Kalchuris.</p></a>
+                           
+                        </div>
+                    </div>
 
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/amarkantak-4.jpeg" alt = "about img">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/amarkantak-4.jpeg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="narmadakund.html"><b>2. Narmadakund</b></a>
+                            <a class="heritage-txt"><p>Narmadakund and its vicinity located in the heart of the city of Amarkantak are one of the most significant parts of Amarkantak. This is the place where it is believed that the river Narmada originated.</p></a>
+                           
+                        </div>
                     </div>
-                    
-                    <div class = "about-right">
-                        <h3>Narmadakund</h3>
-                        <p class="text">Narmadakund is a temple complex built to signify the origin of the Narmada river. The temple complex consists of 16 stone temples like the Narmada Temple, Lord Shiva Temple, Annapurna Temple, Guru Gorakhnath Temple, Shri Ram Janki Temple and Shri Radha Krishna Temple. Narmadakund covers a sprawling area of 6 acres of land and comprises over 23 statues of various idols. Situated in the centre of Amarkantak, Narmadakund is one of the most significant attractions in the city and therefore reaching the attraction is relatively easy.</p>                  
-                        <p class="text">It is said that this was the place of great saints like Maikal and Vyas who meditated here. Historical evidences show that the mandir was built by the Kadchuli around 12th century. Bhosles of Nagpur and Devi Ahilya of Indore had also renovated this temple. </p>
-                        
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/amarkantak-5.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="pataleshwar.html"><b>3. Pataleshwar Temple</b></a>
+                            <a class="heritage-txt"><p>The ancient temples of Kalachuri period are situated in the south of Narmadakund just behind it. These were built by Kalachuri Maharaja Karnadeva (1042-1072 AD).</p></a>
+                           
+                        </div>
                     </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/amarkantak-2.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="shreeyantra.html"><b>4. Shree Yantra Temple</b></a>
+                            <a class="heritage-txt"><p>The most prominent feature of this temple is the huge sculpture with 4 heads at the entrance. The heads represent the faces of Goddess Laxmi, Saraswati, Kali&Bhuvaneshwari. </p></a>
+                           
+                        </div>
+                    </div>
+
+                   
+                   
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            
-                            <h3>Pataleshwar Mahadev Temple</h3>
-                            <p class="text">A very old temple.The ancient temples of Kalachuri period are situated in the south of Narmadakund just behind it. These were built by Kalachuri Maharaja Karnadeva (1042-1072 AD). The Machhendranath and Pataleshwar temples are excellent examples of architecture.In 788 A.D. Adi Shankaracharya was born and he consecrated on the banks of river Narmada in Amarkantak. He founded Pataleshwar Mahadev in Amarkantak, now known as Surajkund today.A must visit place of all devotees.</p>
-                            <h3>Dugdha Dhara</h3>
-                            <p class="text">Dugdha Dhara is another waterfall near Kapil Dhara. The flow of water looks as white as milk (Dugdha) therefore this name is given. It is believed that Rishi Durwasa meditated here. In the process of this meditation, he left the meals completely. When he was on the verge of death, Mother Narmada provided him milk. Nearby are also located Durga Dhara and Shambhu Dhara which are also worth seeing sorts.</p>
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/amarkantak-5.jpg" alt = "about img">
-                       
-                    </div>
-                </div>
-
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/amarkantak-2.jpg" alt = "about img">
-                    </div>
-                    
-                    <div class = "about-right">
-                        <h3>Shree Yantra Temple</h3>
-                        <p class="text">The most prominent feature of this temple is the huge sculpture with 4 heads at the entrance. The heads represent the faces of Goddess Laxmi, Saraswati, Kali&Bhuvaneshwari. Beneath them are finely sculpted figures of 64 yoginis along with the sculptures of Lord Ganesha&Kartik. The temple itself is built as a 3D projection of the Sri Yantra / Sri Chakra which forms the core of the Sri Vidya worship in Hinduism. This branch worships the divine power of the Goddess Tripura Sundari or the Empress beauty of the Three Worlds. In essence it is the geometric representation of the concept of Shakti.</p>                  
-                        <a href="#" class="text-link">Read more..</a>
-                    </div>
-                </div>
-                
-                
-            
 
                 
             </div>
-        
 
         </section>
         <!-- end of about section -->
 
 
-        
+
        
 
         <!-- footer -->
@@ -233,11 +228,12 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
+                        
                     </ul>
                 </div>
 

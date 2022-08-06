@@ -21,9 +21,9 @@
             header{
                 min-height: 100vh;
                 padding-top: 7rem;
-                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/maheshwar.jpeg) center/cover no-repeat;
-                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/maheshwar.jpeg) center/cover no-repeat;
-                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/maheshwar.jpeg) center/cover no-repeat;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/maheshwar.jpg) center/cover no-repeat;
+                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/maheshwar.jpg) center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/maheshwar.jpg) center/cover no-repeat;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                     -ms-flex-direction: column;
@@ -81,7 +81,7 @@
          <header class = "flex header-sm">
             <div class = "container">
                 <div class = "header-title">
-                    <h1>MAGNIFICENT MAHESHWAR</h1>
+                    <h1>Magnificient Maheshwar</h1>
                     
                 </div>
             </div>
@@ -95,11 +95,13 @@
                 <div class = "title-wrap">
                     <span class = "sm-title">Listen Audio</span>
                     
+                    <select id="voices">  </select>
                     <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
 
                 <div class = "about-row">
@@ -107,54 +109,67 @@
                         <img src = "img/maheshwar-1.jpg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <p class = "text">Situated on the banks of river Narmada, Maheshwar appeals to both, the pilgrim as well as the tourist in you. The town possesses a treasure trove of beautiful temples that calm the soul, alongside man-made creations that please the eyes.</p>
-                        <p class="text">A centre of handloom weaving since the 5th century, Maheshwar has been producing the exquisite Maheshwari sarees and fabric. The town also holds the distinction of being the capital of Rajmata Ahilya Devi Holkar's empire during the 18th century.</p>    
-                       <h3>Holka Fort</h3>
-                       <p class="text">As the name precisely suggests, this was the opulent palace of Rani Ahilyabai Holkar which the reason why it is also known as the Queen's fort. This fort was also the administrative headquarter of Rani Ahilyabai during her reign and currently it has been converted into a guesthouse, which is managed by the son of the last Maharaja of Indore, Prince Shivaji Rao Holkar.</p>
+                        <p class="text" id="texttospeech">Situated on the banks of river Narmada, Maheshwar appeals to both, the pilgrim as well as the tourist in you. The town possesses a treasure trove of beautiful temples that calm the soul, alongside man-made creations that please the eyes.<br><br>This city has been the capital of the Haiyavanshi king Sahasrarjun, who had defeated Ravana. Because of persecution of Rishi Jamdagni, his son Bhagwan Parashuram had killed Sahasrangarh. In the mean time, the great goddess Ahilyabai has also been the capital of Holkar. Situated on the banks of river Narmada, this city is famous for its very beautiful and gorgeous Ghats and Maheshwari sarees. There are very artistic temples on the pier, from which the Raj Rajeshwar temple is the main. The famous legend of Adiguru Shankaracharya and Pandit Mandan Mishra was here. It is also the headquarters of a tehsil of the district. Is a popular tourist destination. 56 km from Khargone.<br><br>A centre of handloom weaving since the 5th century, Maheshwar has been producing the exquisite Maheshwari sarees and fabric. The town also holds the distinction of being the capital of Rajmata Ahilya Devi Holkar's empire during the 18th century.</p>
                     </div>
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            <h3>Ek Mukhi Datta Temple</h3>
-                            <p class="text">Ek Mukhi Datta Temple is a newly constructed Hindu temple located in Sahastradhara, Jalkoti, Maheshwar. Situated on the banks of river Narmada. Also called Shiva Datta Dham, Ek Mukhi Datta Temple is dedicated to Lord Dattatreya. This temple is constructed in 30 acres of area. The temple is situated at the bank of the historical Narmada River in its most serious, calm, adventured, and horrible form. This temple has admirable architecture and fantastic history. The main highlight of this temple is the attractive idols of Lord Ek Mukhi Datta, Maa Narmada, and Lord Ganesha.</p>
-                            <p class="text">Sadguru Shri Narayan Maharaj of Shri Kshetra Narayanpur (Anna) and his disciple are building 'Char Datta Dhams' in four different directions in India, of which 2 Dhams have already been completed. Shiva Datta Dham, Jalkoti is the first of the Char Dattadhams. The second of the Char Datta Dhams is Anusaya Datta Dham, Vattakottai, Kanyakumari, the third one is Bramha Datta Dham near Kolkata and it is under construction. This will be the largest Hindu temple in West Bengal. Shri Atri Dattadham, Himachal Pradesh is the fourth Datta Dham.</p>
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/maheshwar-2.jpg" alt = "about img">
-                       
-                    </div>
+                <div class = "title-wrap">
+                   
+                    <h3 class = "lg-title">Best Places to Visit</h3>
+                   
                 </div>
 
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/maheshwar-5.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="holkar.html"><b>1. Holkar Fort</b></a>
+                            <a class="heritage-txt"><p>As the name precisely suggests, this was the opulent palace of Rani Ahilyabai Holkar which the reason why it is also known as the Queen's fort. </p></a>
+                           
+                        </div>
+                    </div>
 
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/maheshwar-3.jpg" alt = "about img">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/maheshwar-2.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="datta.html"><b>2. Ek Mukhi Datta Temple</b></a>
+                            <a class="heritage-txt"><p>Ek Mukhi Datta Temple is a newly constructed Hindu temple located in Sahastradhara, Jalkoti, Maheshwar. Situated on the banks of river Narmada.</p></a>
+                           
+                        </div>
                     </div>
-                    
-                    <div class = "about-right">
-                        <h3>Omkareshwar Jyotirlinga Temple</h3>
-                        <p class="text">One of the holiest shrines in the whole of India, the Omkareshwar or Omkar Mandhata temple is one of the twelve revered jyothirlingas in India. The temple is situated on an island called Mandhata, located at the meeting point of the rivers Narmada and Kaveri.</p>                  
-                        <p class="text">The island is said to be in the shape of the Hindu 'OM' symbol. There are multiple temples on this island and the actual jyothirlinga is said to be in the Mamleshwar temple. This temple, apart from the religious values, also boasts of stunning architecture and houses beautiful frescos and carvings.</p>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/maheshwar-3.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="omkareshwar.html"><b>3. Omkareshwar Jyotirlinga Temple</b></a>
+                            <a class="heritage-txt"><p>One of the holiest shrines in the whole of India, the Omkareshwar or Omkar Mandhata temple is one of the twelve revered jyothirlingas in India.</p></a>
+                           
+                        </div>
                     </div>
+
+                   
+                   
+                   
                 </div>
 
-              
-            
 
                 
             </div>
-        
 
         </section>
         <!-- end of about section -->
 
 
-        
+
        
 
         <!-- footer -->
@@ -201,11 +216,12 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
+                        
                     </ul>
                 </div>
 

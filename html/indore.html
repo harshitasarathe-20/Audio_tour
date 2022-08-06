@@ -81,7 +81,7 @@
          <header class = "flex header-sm">
             <div class = "container">
                 <div class = "header-title">
-                    <h1>YUMMY INDORE</h1>
+                    <h1>Yummy Indore</h1>
                     
                 </div>
             </div>
@@ -95,11 +95,13 @@
                 <div class = "title-wrap">
                     <span class = "sm-title">Listen Audio</span>
                     
+                    <select id="voices">  </select>
                     <span><div class="video-btn">
-                        <button class="audio-btn" id="play"><i class="fa fa-play" ></i></button>
-                        <button class="audio-btn" id="pause"><i class="fas fa-pause"></i></button>
-                        <button class="audio-btn" id="stop"><i class="fas fa-stop"></i></button>
-                        </div></span>
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                        </div>
+                    </span>
                 </div>
 
                 <div class = "about-row">
@@ -107,88 +109,79 @@
                         <img src = "img/indore-1.jpg" alt = "about img">
                     </div>
                     <div class = "about-right">
-                        <p class="text">A trading hub between the Deccan and Delhi in the 16th century, the city of Indore was discovered by Rao Nandlal Chaudhary. Later, Rani Ahilya Bai Holkar, with her keen interest in education and planning, built the largest city in the state of Madhya Pradesh. Indore, being ranked as 'the cleanest city in India' for the fifth consecutive year has reserved its place in the first 20 cities to be developed as smart cities as well. </p>
-                        <p class = "text">The metropolitan yet traditional vibe of Indore attracts tourists for fabulous places to visit and fantastic food to taste.Today, Indore has numerous places to visit from a spectacle of majestic palaces co-existing with commercial centers. The birth-land of The Indore Gharana of Hindustani Classical Music has a rich history of the architectural marvel from the Maratha era that allures the visitors. Indore is home to spectacular The Kanch Mandir, which is made entirely of glass and mirrors, luxurious Lal Bagh Palace and Royal Rajwada. Tourists can also visit the exotic natural wonders such as Gulawat Lotus Valley, Choral Ghat and Patalpani in the outskirts of the city. </p>
-                       
-                       
-                    </div>
-                </div>
-
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
                         
-                        <article>
-                            <h3>Lal Bagh Palace</h3>
-                            <p class="text">This grand palace was built by the Holkar dynasty between 1886 and 1921. It was constructed over three phases by Tukoji Rao Holkar II and Tukoji Rao Holkar III. It extends to an area of 72 acres, and once had one off the best rose gardens in the country. Its grounds still contain a statue of Queen Victoria. The European-inspired palace is a combination of various architectural styles such as Renaissance, Palladian and Baroque. Its well-restored interiors are decorated with chandeliers, ceiling murals, drapes, period furniture, paintings, mirrors, and sculptures of figures from Greek and Latin mythology. It also an Indian dining room, which was used to host traditional banquets.</p>
-                            <p class="text">Resided by the rulers of the Holkar dynasty, the Lal Bagh Palace is class and grandeur personified. The palace is spread on a sprawling area of 28 acres and reflects the taste of the rulers of the Holkar dynasty.</p>
-                            
-                        </article>
-                    </div>
-                <div class = "about-left ">
-                        <img src = "img/indore-3.jpg" alt = "about img">
-                       
+                        <p class="text" id="texttospeech">Indore is a trading hub between the Deccan and Delhi in the 16th century, the city of Indore was discovered by Rao Nandlal Chaudhary. Later, Rani Ahilya Bai Holkar, with her keen interest in education and planning, built the largest city in the state of Madhya Pradesh. Indore, being ranked as 'the cleanest city in India' for the fifth consecutive year has reserved its place in the first 20 cities to be developed as smart cities as well.<br><br>The metropolitan yet traditional vibe of Indore attracts tourists for fabulous places to visit and fantastic food to taste.Today, Indore has numerous places to visit from a spectacle of majestic palaces co-existing with commercial centers. The birth-land of The Indore Gharana of Hindustani Classical Music has a rich history of the architectural marvel from the Maratha era that allures the visitors. Indore is home to spectacular The Kanch Mandir, which is made entirely of glass and mirrors, luxurious Lal Bagh Palace and Royal Rajwada. Tourists can also visit the exotic natural wonders such as Gulawat Lotus Valley, Choral Ghat and Patalpani in the outskirts of the city.</p>
                     </div>
                 </div>
 
-
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/indore-4.jpg" alt = "about img">
-                    </div>
-                    
-                    <div class = "about-right">
-                        
-                        <p class="text">Apart from being considered as the Madhya Pradesh's commercial capital, it is also known for mouth-watering culinary experience.Indore is no less than a food paradise for foodie tourists. Its signature dishes like Poha Jalebi, Mawa Bati & Bhutte ki kees are popular across the nation. A visit to Indore is never complete without having scrumptious food at citie's Sarafa bazaar & Chappan Dukan.</p>                  
-                       <h3>Chappan Dukaan Indore</h3>
-                        <p class="text"> Chappan Dukan (56 Shops) is a must-visit place for all foodies where you can find all street food, namkeens (Indian snacks), and other food/noon-food items !! This street is famous for delicious & cheap snacks and sweets of Indore !! </p>
-                        <p class="text">Chappan Dukan has been the favourite of Indoreans since a long time and is only growing in its name and popularity. This 200 meter long street that consists of 56 consecutive shops (hence the name) of different types and varieties of food, feeds thousands of people every single day. The small kiosks at chappan Dukan allegedly contribute to around 40% of the annual 5000 cr turnover that from food markets in the city.</p>
-                    </div>
+                <div class = "title-wrap">
+                   
+                    <h3 class = "lg-title">Best Places to Visit</h3>
+                   
                 </div>
 
-                <div class = "about-row">
-                    
-                    <div class = "about-right my-2">
-                        
-                        <article>
-                            
-                            <h3>Patal Pani Waterfall</h3>
-                            <p class="text">The Patalpani Waterfall is located in the Mhow Tehsil of Indore district and is a popular picnic spot for the locals of the area. Surrounded by dense forest covers and majestic hills Patalpani plummets from a height of 300 metres. The monsoons swell the falls and may make it risky for close encounters causing accidents. It is best to maintain a cautious distance from the waterfall during the rain.</p>
-                           <p class="text">Formed by the Choral River, the Pataipani Waterfall is cascading down from a height of about 91 meters (300 ft). The depth of the pond that forms at the bottom of the waterfall is unknown and legend has it that it goes as deep as patal. Therefore, the falls are called Patal-Pani, where Patal means the underworld and Pani means water in Hindi. Surrounded by dense forest covers, majestic hills, and lush green landscapes, it is one of the popular picnics spots near Indore, and an ideal photography spot too. The waterflow is magnanimous during the monsoons and the area is prone to flash floods. It is best to maintain a cautious distance from the waterfall during the rain. However, the waterfall goes almost dry in the summer season, and the stream is reduced to a trickle. A railway line passing along the area adds to the charm of the place.</p>
-                        </article>
+                <div class = "blog-row">
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/indore-3.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="lalbagh.html"><b>1. Lal Bagh Palace</b></a>
+                            <a class="heritage-txt"><p>Resided by the rulers of the Holkar dynasty, the Lal Bagh Palace is class and grandeur personified. The palace is spread on a sprawling area of 28 acres and reflects the taste of the rulers of the Holkar dynasty</p></a>
+                           
+                        </div>
                     </div>
-                <div class = "about-left ">
-                        <img src = "img/indore-5.jpg" alt = "about img">
-                       
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/indore-4.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="chappan.html"><b>2. Chappan Dukaan</b></a>
+                            <a class="heritage-txt"><p>Chappan Dukan (56 Shops) is a must-visit place for all foodies where you can find all street food, namkeens (Indian snacks), and other food/noon-food items !!</p></a>
+                           
+                        </div>
                     </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/indore-5.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="patalpani.html"><b>3. Patal-Pani Waterfall</b></a>
+                            <a class="heritage-txt"><p>The Patalpani Waterfall is located in the Mhow Tehsil of Indore district and is a popular picnic spot for the locals of the area. Surrounded by dense forest covers and majestic hills Patalpani plummets from a height of 300 metres. </p></a>
+                           
+                        </div>
+                    </div>
+
+                    <div class = "blog-item my-2 shadow">
+                        <div class = "blog-item-top">
+                            <img  href="c.html" src = "img/indore-6.jpg" alt = "blog">
+                                                       
+                        </div>
+                        <div class = "blog-item-bottom">
+                            <a  class="link-i" href="khajrana.html"><b>4. Khajrana Temple</b></a>
+                            <a class="heritage-txt"><p>The Khajrana Ganesh temple is one of the most powerful shrines of the Lord Ganesha. It was built by Rani Ahilyabai Holkar to safeguard the idol of Lord Ganesha from Aurangzeb. </p></a>
+                           
+                        </div>
+                    </div>
+
+                   
+                   
                 </div>
 
-                <div class = "about-row">
-                    <div class = "about-left my-2">
-                        <img src = "img/indore-6.jpg" alt = "about img">
-                    </div>
-                    
-                    <div class = "about-right">
-                        <h3>Khajrana Temple</h3>
-                        <p class="text">The Khajrana Ganesh temple is one of the most powerful shrines of the Lord Ganesha. It was built by Rani Ahilyabai Holkar to safeguard the idol of Lord Ganesha from Aurangzeb. The temple has since grown from being housed in a small hut to a big temple with large inner and outer sanctums. Vinayak Chaturthi is celebrated in a big way in the temple.</p>                  
-                        <p class="text">Khajrana Ganesh Temple is dedicated to Lord Ganesh. This temple was built in 1735 by the Maratha queen Ahilyabai Holkar, who retrieved the idol of god Ganesha from a well where it had been hidden, to keep it safe from the Mughal Emperor Aurangzeb. This is one of the most visited temples in the city because of its history and religious beliefs attached to it. According to several religious beliefs, it is said that whoever comes here and wishes for something, the wish gets fulfilled within a short period.</p>
-                        <h3>Bada Ganpati</h3>
-                        <p class="text">In Hindi, 'Bada' literally means big, and Ganpati is the pet name of Lord Ganesha. This temple earns its name due to the size of Lord Ganesha's idol - at the height of about 25 feet from crown to foot, it is said to be one of the largest idols of the God in the world. The statue is made of a peculiar mixture of limestone, jaggery, bricks and sacred soil and water from the major pilgrim places in the country. Located at the end of a quiet lane in the city of Indore, the Bada Ganpati may be a modest-looking temple, but it holds significance simply based on the enormity of the Lord's statue.</p>
-                    </div>
-                </div>
-                
-                
-            
 
                 
             </div>
-        
 
         </section>
         <!-- end of about section -->
 
 
-        
+
        
 
         <!-- footer -->
@@ -235,11 +228,12 @@
                 <div class = "footer-item">
                     <h2>Quick links</h2>
                     <ul>
-                        <li><a href = "#">Culture</a></li>
-                        <li><a href = "#">Gaatha-Culture of Madhya Pradesh</a></li>
-                        <li><a href = "#">Handicrafts</a></li>
-                        <li><a href = "#">Festival & Events</a></li>
-                        <li><a href = "#">Adventure</a></li>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
+                        
                     </ul>
                 </div>
 
