@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kumbh Mela</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+
+        <style>
+            header{
+                min-height: 100vh;
+                padding-top: 7rem;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/khumbhmela.jpg) center/cover no-repeat;
+                background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/khumbhmela.jpg) center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/khumbhmela.jpg) center/cover no-repeat;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                color: #fff;
+                text-align: center;
+            }
+            .nav-link {
+                color: white;;
+            }
+
+            .site-brand {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar" >
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Tour &<span><br>Explore</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "../index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "../gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <!-- <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li> -->
+                        <li class = "nav-item">
+                            <a href = "../explore.html" class = "nav-link">Explore</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "../contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+         <!-- header -->
+         <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Kumbh Mela</h1>
+                    
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+
+        <!-- about section -->
+        <section id = "about" class = "py-4">
+           
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Listen Audio</span>
+                    
+                    <div class="video-btn">
+                        <select id="voices">
+
+                        </select>
+                        <button class="audio-btn" id="speechplay"><i class="fa fa-play" ></i></button>
+                        <button class="audio-btn" id="speechpause"><i class="fas fa-pause"></i></button>
+                        <button class="audio-btn" id="speechstop"><i class="fas fa-stop"></i></button>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class = "about-row">
+                    <div class = "about-left my-2">
+                        <img src = "img/khumbh-1.jpg" alt = "about img"><br>
+                        <img src = "img/khumbh-2.jpes" alt = "about img"><br>
+                        <img src = "img/kumbh.jpg" alt = "about img">
+                    </div>
+                    <div class = "about-right">
+                        <p class = "text"  id="texttospeech">Ujjain, is not only famous for its heritage treasures or temples, one of the prime attraction that draws people toward it is the Kumbh Mela that happens here once in every twelve years. Kumbh ka Mela is the largest spiritual festival known to humanity.<br><br>Imagine if you get lost in Madhya Pradesh and in doldrums, land up in a place where you see thousands of bearded men clad in orange cloth and taking dips in the river early in the morning, then you must relax because you surely have reached Ujjain. This holy city in the heart of India is located at a distance of 55 kms from Indore and every 12 years it attracts around 10 million pilgrims for Kumbh ka Mela a grand fair.<br><br>Kumbh Mela has a very absorbing legend associated with it. It is said the Indra (ruler of celestial bodies) was gifted a garland of flowers by the Durvasa, a renowned savant. But Indra, fortuitously passed it to his divine elephant under who's feet, it got crushed. Hurt by this gesture, Durvasa, out of rage cursed Indra of denudation of his powers and as a result, Indra was circumvented by Bali, a fiendish king. The gods then pleaded Vishnu for penance and he recommended divine nectar called Amrita, that helped in attaining immorality. To obtain this the oceans and 'asurs' stirred and the part of delight was distributed among the Brihaspati, (Jupiter) Surya,(Sun) Chandrama (Moon) and Shani (Saturn). This process took 12 days to get materialised, which is equivalent to 12 years on earth. During the process however, few drops of this Amrit fell on four regions of the earth namely  Allahabad, Ujjain, Nasik and Haridwar. Since then these places are revered and once in 12 years play host to the pious Mela.<br><br>This Mela is held in Ujjain, when Jupiter enters the cosmic circle of Leo. In that there is a combination of the 10 Punyaprad Yog or various specified factors. Thus, this is the condition one should look for attending the Kumbh Mela in Ujjain.<br><br>The Siddhi Ashram in Ujjain plays host to several hundreds people who come to pay their homage on the eve of this important festival also a perfect place for your sojourn in Ujjain. There are a lot of cultural and spiritual activities that goes on here. So do not waste time. Get soppy in the next Kumbh Mela that will be organised in Ujjain in the year 2016. But there is another chance in the year 2010 when Ujjain will hold the Ardh Kumbh Mela. So do not wait make sure you are not left behind this time.</p>
+                    </div>
+                </div>
+                
+
+                
+             
+        
+
+            </div>
+            
+
+
+        </section>
+        <!-- end of about section -->
+
+
+
+       
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Tour &<span><br>Explore</span>
+                    </a>
+                    <p class = "text">The goal and vision of Audio Tour guide helps the user to enjoy their tour of all archeological sites and museum easily,quickly and safely, through their smart device.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Quick links</h2>
+                    <ul>
+                        <li><a href = "culture.html">Culture</a></li>
+                        <li><a href = "mp.html">Gaatha-Culture of Madhya Pradesh</a></li>
+                        <li><a href = "handicrafts.html">Handicrafts</a></li>
+                        <li><a href = "festival.html">Festival & Events</a></li>
+                       
+                    </ul>
+                </div>
+
+                
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script src = "js/audio.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
